@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O'chirishni Tasdiqlang</title>
+</head>
+<body>
+    <h1>Rostanham  o'chirmoqchimisiz ?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+        <a href="{% url 'index' %}">Cancel</a>
+    </form>
+</body>
+</html>
